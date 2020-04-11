@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/formvalid.js"></script>
+</head>
+<body>
+    <form onsubmit="return validate()" action="msg.html">      <!--here we give onsubmit in form rather than onclick because we validate the form on submit not the button      here return will check the function return type is true or false if true function executes or els eit does not execute-->
+        <input id="uname" placeholder="username" type="text" required> <!--required makes the feilds compulsory to fill or it throws an error-->
+        <br><br>
+        <input id="pass" placeholder="password" type="password" required>
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html> 
